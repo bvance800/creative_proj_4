@@ -21,5 +21,10 @@ form{
 }
 
 #submit-animal {
-	margin:10px;
+	margin: 0 10px;
+}
+
+#animal{
+	width:50%;
+	margin: 0 auto;
 }
