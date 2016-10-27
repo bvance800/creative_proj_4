@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Eczar');
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Eczar', serif;
 	background-color: #eaeaea;
 	text-align: center;
 }
@@ -14,5 +16,10 @@ form{
 	background-color:#7fffd4;
 	padding: 20px;
 	border-radius: 15px;
+	margin: 0 auto;
+	width: 50%;
+}
 
+#submit-animal {
+	margin:10px;
 }
