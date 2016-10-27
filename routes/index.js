@@ -6,14 +6,13 @@ router.get('/', function(req, res, next) {
   res.sendFile('index.html', {root: 'public'});
 });
 
-router.get('/animals', function(req, res, next){
-
-	alert("So you think you're special?");
-
+router.get('/hello', function(req, res, next)
+{
+	console.log("inside '/hello'");
 });
 
-router.get('/getanimal', function(req, res, next){
-
+router.get('/get', function(req, res, next){
+	console.log("/getanimal");
 	var fs = require('fs');
 
 	fs.readFile(__dirname + '/animals.txt',function(err,data) 

@@ -2,11 +2,11 @@ $(document).ready(function(){
 
         $( "#animal-form" ).submit(function(e) {
         
-	var url = "getanimal?q=" + $("#animal").val();
-	console.log("in the .submit()");
+	var url = "get?q=" + $("#animal").val();
+	console.log("in the .submit() " + url);
 	e.preventDefault();
 
-	$.getJSON(url, function(data){
+	$.getJSON( url, function(data){
 		
 	console.log(data);	
 
@@ -32,6 +32,13 @@ $(document).ready(function(){
            	 $('body').css('background-size', "cover");
 
         	});
+
+		$("#popup").empty();
+	}
+	else
+	{
+		$("#popup").html("<h1 id=\"head\">That animal is not on file :/</h1>");
+
 	}
 
 });
