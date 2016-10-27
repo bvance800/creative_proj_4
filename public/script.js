@@ -12,7 +12,8 @@ $(document).ready(function(){
             format: "json"
         },
         function(data) {
-            var image_src = data.items[0]['media']['m'].replace("_m", "_b");
+	    var rnd = Math.floor(Math.random() * data.items.length);
+            var image_src = data.items[rnd]['media']['m'].replace("_m", "_b");
 
             $('body').css('background-image', "url('" + image_src + "')");
             $('body').css('background-repeat', "no-repeat");
