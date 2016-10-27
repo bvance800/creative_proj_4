@@ -5,12 +5,25 @@
 	<head>
 		<title>Creative Project 4</title>
 		<link href="stylesheets/style.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 
 	<body>
-		<h1>Welcome to our Amazing site!</h1>
-		<p>See? I told you it was amazing.</p>
-		<p>Well, you can leave now..</p>
+		<h1>I heard you like animals</h1>	
+		<form id="animal-form">
+			Enter an animal: <input type="text" id="animal" value="kitty"><br>
+			<input id="submit-animal" type="submit" value="Submit">
+		</form>
+		
+
+		<script>
+			$( "#animal-form" ).submit(function() {
+
+
+			});
+
+		</script>		
+
 	</body>
 
 </html>
